@@ -1,12 +1,14 @@
-# Bancos de dados locais
-*.db
-*.sqlite
-*.sqlite3
-backend/data/
-
-# Executáveis do Windows e binários
+# Ignorar arquivos pesados e executáveis do Windows em qualquer lugar
 *.exe
 
-# Pastas de ferramentas e monitoramento externo
-prometheus/
+# Ignorar o banco de dados de produção local da raiz
+producao1.db
+
+# Ignorar APENAS os dados gerados pelo banco e ferramentas
+backend/data/
 grafana-data/
+prometheus/data/
+
+# Garante que arquivos de código dentro de 'prometheus' ou 'grafana' não sejam ignorados
+!prometheus/*.yml
+!prometheus/*.conf
