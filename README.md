@@ -2,7 +2,7 @@
 
 Backend completo em Python para monitoramento industrial com testes de estresse, observabilidade e monitoramento de desempenho.
 
-## 📋 Visão Geral
+##  Visão Geral
 
 Sistema para monitoramento de sensores industriais com:
 - API REST Flask para receber leituras de sensores
@@ -11,7 +11,7 @@ Sistema para monitoramento de sensores industriais com:
 - Grafana para visualização gráfica
 - k6 para testes de carga
 
-## 🏗️ Arquitetura
+##  Arquitetura
 
 ```
 k6 (Teste de Carga)
@@ -36,7 +36,7 @@ Grafana (Visualização)
 - **prometheus-client** - Cliente Python para Prometheus
 - **python-dotenv** - Gerenciamento de variáveis de ambiente
 
-## 📚 O que é Prometheus?
+##  O que é Prometheus?
 
 **Prometheus** é um sistema de monitoramento de código aberto que coleta e armazena métricas como dados de séries temporais. Ele:
 
@@ -48,7 +48,7 @@ Grafana (Visualização)
 
 **Neste sistema:** O Prometheus coleta métricas da API Flask a cada 15 segundos do endpoint `/metrics`.
 
-## 📊 O que é Grafana?
+##  O que é Grafana?
 
 **Grafana** é uma plataforma de visualização e análise de métricas de código aberto. Ela:
 
@@ -147,7 +147,7 @@ INFO [06-10|01:48:03] HTTP Server Listen logger=httpserver address=[::]:3000 pro
 - **Login:** `admin`
 - **Senha:** `admin` (alterar no primeiro acesso)
 
-## 🧪 Comandos de Teste
+##  Comandos de Teste
 
 ### Testar API Flask
 
@@ -257,7 +257,7 @@ k6 run --stage 60s:50 backend/tests/teste.js
 k6 run --stage 120s:100 backend/tests/teste.js
 ```
 
-## 📊 Sugestões de Teste para Apresentação
+##  Sugestões de Teste para Apresentação
 
 ### Teste 1: Demonstração Básica (5 minutos)
 
@@ -390,7 +390,7 @@ curl -X POST http://localhost:5000/sensor -H "Content-Type: application/json" -d
 # - Taxa de erros
 ```
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 S.A -Tester/
@@ -533,7 +533,7 @@ curl http://localhost:5000/health
 curl http://localhost:5000/metrics
 ```
 
-## 📝 Resumo de Comandos para Apresentação
+##  Resumo de Comandos para Apresentação
 
 ### Inicialização Completa (3 terminais)
 
@@ -578,7 +578,7 @@ k6 run backend/tests/teste.js
 - **Prometheus:** http://localhost:9090
 - **Grafana:** http://localhost:3000 (admin/admin)
 
-## 🎯 Pontos Chave para Apresentação
+##  Pontos Chave para Apresentação
 
 1. **Arquitetura Moderna:** Flask + SQLite + Prometheus + Grafana
 2. **Observabilidade:** Métricas em tempo real
@@ -587,6 +587,6 @@ k6 run backend/tests/teste.js
 5. **Visualização:** Dashboards interativos no Grafana
 6. **Monitoramento:** Alertas e métricas detalhadas
 
-## 📄 Licença
+##  Licença
 
 Este projeto foi desenvolvido para fins de monitoramento industrial e testes de estresse.
