@@ -60,7 +60,7 @@ Grafana (Visualização)
 
 **Neste sistema:** O Grafana visualiza as métricas coletadas pelo Prometheus, mostrando gráficos de requisições, erros, tempo de resposta e leituras de sensores.
 
-## 🚀 Como Executar o Sistema
+## Como Executar o Sistema
 
 ### Pré-requisitos
 
@@ -462,7 +462,7 @@ provisioning = C:\Users\wevertondonato\OneDrive\Imagens\Capturas de tela\Área d
 path = C:\Users\wevertondonato\OneDrive\Imagens\Capturas de tela\Área de Trabalho\S.A -Tester\grafana-data\grafana.db
 ```
 
-## 📊 Métricas Disponíveis
+##  Métricas Disponíveis
 
 ### Métricas da API Flask
 
@@ -491,7 +491,7 @@ rate(sensor_readings_total[5m])
 histogram_quantile(0.95, rate(flask_app_request_duration_seconds_bucket[5m]))
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Erro: Porta já em uso
 
