@@ -25,7 +25,7 @@ Prometheus (Coleta de Métricas)
 Grafana (Visualização)
 ```
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - **Python 3.12+** - Linguagem de programação
 - **Flask** - Framework Web para API REST
