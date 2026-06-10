@@ -1,0 +1,15 @@
+# Dependências do Sistema de Monitoramento Industrial
+# Python 3.12+
+
+# Framework Web
+Flask==3.0.0
+Werkzeug==3.0.1
+
+# Cliente Prometheus
+prometheus-client==0.19.0
+
+# Variáveis de Ambiente
+python-dotenv==1.0.0
+
+# Logging
+# Nota: SQLite é built-in no Python, não requer instalação adicional

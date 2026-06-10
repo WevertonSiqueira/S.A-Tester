@@ -1,0 +1,12 @@
+# Bancos de dados locais
+*.db
+*.sqlite
+*.sqlite3
+backend/data/
+
+# Executáveis do Windows e binários
+*.exe
+
+# Pastas de ferramentas e monitoramento externo
+prometheus/
+grafana-data/
