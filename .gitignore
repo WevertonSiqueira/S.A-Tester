@@ -1,14 +1,18 @@
-# Ignorar arquivos pesados e executáveis do Windows em qualquer lugar
+# Ignorar arquivos pesados e executáveis do Windows
 *.exe
-
-# Ignorar o banco de dados de produção local da raiz
 producao1.db
-
-# Ignorar APENAS os dados gerados pelo banco e ferramentas
 backend/data/
-grafana-data/
 prometheus/data/
-
-# Garante que arquivos de código dentro de 'prometheus' ou 'grafana' não sejam ignorados
 !prometheus/*.yml
-!prometheus/*.conf
+
+# --- CONFIGURAÇÃO DO GRAFANA ---
+# Ignorar dados internos e logs gerados pelo Grafana
+grafana-data/data/
+grafana-data/log/
+grafana-data/logs/
+grafana-data/png/
+
+# PERMITIR arquivos de configuração que você alterou
+!grafana-data/*.ini
+!grafana-data/*.json
+!grafana-data/plugins/
